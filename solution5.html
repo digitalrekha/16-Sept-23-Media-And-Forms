@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 5</title>
+    <!-- 5. Create a sign-up and sign-in form with proper validation. -->
+
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form action="post">
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="username" placeholder="First Name" required minlength="3"><br><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="username" placeholder="Last Name" required minlength="3"><br><br>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Email" required minlength="3">
+        </div><br>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="Password" name="password" required>
+        </div><br>
+        <div>
+            <label for="confirm password">Confirm Password: </label>
+            <input type="confirm password" id="confirm Password" name="confirm password" required>
+        </div><br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required max="150" min="0" value="0">
+        </div><br>
+        <div>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" required value="male">
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" required value="female">
+        </div><br>
+        <div><label for="terms">I agree to terms & conditions</label>
+            <input type="checkbox" id="terms" name="terms">
+        </div><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
